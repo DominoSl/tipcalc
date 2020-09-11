@@ -10,28 +10,25 @@
     <main>
         <div id="left">
            <p>Bill</p>
-           <input id="bill" type="text" name="bill">
+           <input id="bill" type="text" name="bill" value="0.00" onchange="result()">
            <p>Tip %</p>
-           <input class="lt" type="button" name="subtip" value="-">
-           <input id="tip" type="text" name="tip">
-           <input class="rt" type="button" name="addtip" value="+">
+           <input id="tm" type="button" name="subtip" value="-" onclick="result()">
+           <input id="tip" type="text" name="tip" value="15%" onchange="result()">
+           <input id="tp" type="button" name="addtip" value="+" onclick="result()">
            <p>Number of people</p>
-           <input class="lt" type="button" name="sub" value="-">
-           <input id="number" type="text" name="number">
-           <input class="rt" type="button" name="add" value="+">
+           <input id="nm"type="button" name="sub" value="-" onclick="result()">
+           <input id="number" type="text" name="number" value="1" onchange="result()">
+           <input id="np" type="button" name="add" value="+" onclick="result()">
         </div>
         <div id="right">    
-           <div>
-               <p>Tip</p>
-               <p>per person</p>
-            </div>  
-           <div id="tipf">asdadasd</div>
             <div>
-               <p>Total</p>
-               <p>per person</p>
-               <br>
+               <p>Tip per person</p>
+            </div>  
+            <div id="tipf"></div>
+            <div class="t">
+               <p>Total per person</p>
            </div>  
-           <div id="total">asdasd</div>
+           <div id="total" class="t"></div>
         </div>
     </main>
     <script src="index.js"></script>

@@ -9,13 +9,17 @@
   main {
       display: flex;
       flex-wrap: wrap;
-      width: 60%;
+      width: 70%;
       border-radius: 5px;
       border-color: lightgrey;
       border-width: 2px;
       border-style: solid;
       padding:40px;
       
+  }
+
+  input{
+      text-align: center;
   }
 
   #left {
@@ -27,6 +31,7 @@
  
 #right {
     display: flex;
+    flex-flow: row wrap;
 }
 
 
@@ -35,16 +40,19 @@
     width: 100%;
 }
 
-.lt {
+#tm, #nm {
     margin-right: -5px;
     padding: 2px 5px;
 }
 
-.rt {
+#np, #tp {
     margin-left: -5px;
     padding: 2px 4px;
     }
 
+.t {
+    font-weight: bold;
+}
 
 
 
