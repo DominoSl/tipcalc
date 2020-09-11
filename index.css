@@ -14,27 +14,36 @@
       border-color: lightgrey;
       border-width: 2px;
       border-style: solid;
-      padding:40px;
-      
-  }
+      align-self: center;
+    }
 
   input{
       text-align: center;
+      height: 20px;
   }
 
   #left {
       border-right: solid 1px lightgrey;
-      align-content: space-between;
-      margin-right: 10px;
-      padding-right: 30px;
+      padding: 20px;
   }
+
+  #right {
+      display: flex;
+      flex-flow: column wrap;
+      align-items: center;
+      justify-content: space-around;
+      margin: 20px;
+    }
  
-#right {
-    display: flex;
-    flex-flow: row wrap;
+#tipf {
+    width: 70%;
+    text-align: right;
 }
 
-
+#total {
+    width: 70%;
+    text-align: right;
+}
 
 #bill {
     width: 100%;
@@ -54,6 +63,10 @@
     font-weight: bold;
 }
 
+#tipf #total {
+    display: inline-block;
+    text-align: left;
+} 
 
 
 

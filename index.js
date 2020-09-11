@@ -7,41 +7,52 @@ function result() {
     let tipper = tip / number;
     let total= bill -(-tip);
     let totalper = total / number;
-    document.getElementById('tipf').innerHTML = tipper;
-    document.getElementById('total').innerHTML = totalper;
+    document.getElementById('tipf').innerHTML = '$' + tipper;
+    document.getElementById('total').innerHTML = '$' + totalper;
 } 
 
 //Buttons
 
 document.getElementById('tm').addEventListener('click', function() {
     document.getElementById('tip').value =  parseInt(document.getElementById('tip').value, 10) - 1 + '%';
+    result();
 }, false)
 
 document.getElementById('tp').addEventListener('click', function() {
     document.getElementById('tip').value =  parseInt(document.getElementById('tip').value, 10) + 1 + '%';
+    result();
 }, false)
 
 document.getElementById('nm').addEventListener('click', function() {
     document.getElementById('number').value =  parseInt(document.getElementById('number').value, 10) - 1 ;
+    result();
 }, false)
 
 document.getElementById('np').addEventListener('click', function() {
     document.getElementById('number').value =  parseInt(document.getElementById('number').value, 10) + 1;
+    result();
 }, false)
-
-
-//Eventlisteners
-
-document.getElementById('bill').addEventListener('change', result(), false)
-document.getElementById('tip').addEventListener('change', result(), false)
-document.getElementById('number').addEventListener('change', result(), false)
-
-
 
 
 
 
 //Trash
+
+
+
+
+
+
+
+
+
+//Eventlisteners
+
+// document.getElementById('bill').addEventListener('change', result(), false)
+// document.getElementById('tip').addEventListener('change', result(), false)
+// document.getElementById('number').addEventListener('change', result(), false)
+
+
 
 // function tipvalue() {
 //     let tv = parseInt(document.getElementById('bill').value, 10) * parseInt(document.getElementById('tip').value, 10) /100;
